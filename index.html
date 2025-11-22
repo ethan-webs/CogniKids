@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CogniKids - Play That Builds Big Minds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span class="top-bar-text">100% Ad-Free. Designed by Early Childhood Experts.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="logo">
+                        <i class="fas fa-paw"></i>
+                        <span>CogniKids</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#learning">Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#safety">Safety</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#download">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Play That Builds Big Minds</h1>
+                    <p class="hero-subtitle">Educational games designed by child development experts to help your toddler learn ABCs, counting, and problem-solving through safe, ad-free play.</p>
+                    <div class="app-badges">
+                        <a href="#" class="app-badge">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                        </a>
+                        <a href="#" class="app-badge">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="app-simulator">
+                        <div class="simulator-header">
+                            <div class="simulator-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <span class="simulator-title">CogniKids Learning</span>
+                        </div>
+                        <div class="simulator-content">
+                            <div class="game-screen" id="gameScreen">
+                                <div class="game-menu">
+                                    <h3>Choose Your Adventure!</h3>
+                                    <div class="game-options">
+                                        <button class="game-btn" onclick="startGame('abc')">
+                                            <i class="fas fa-font"></i>
+                                            <span>ABCs</span>
+                                        </button>
+                                        <button class="game-btn" onclick="startGame('numbers')">
+                                            <i class="fas fa-calculator"></i>
+                                            <span>123s</span>
+                                        </button>
+                                        <button class="game-btn" onclick="startGame('shapes')">
+                                            <i class="fas fa-shapes"></i>
+                                            <span>Shapes</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Alignment Section -->
+    <section id="learning" class="curriculum">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Educational Principles</h2>
+                    <p class="section-subtitle">Built on proven early childhood development research</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="curriculum-card">
+                        <div class="card-icon">
+                            <i class="fas fa-font"></i>
+                        </div>
+                        <h4>Language & Literacy</h4>
+                        <p>Interactive ABC games that build letter recognition, phonics, and early reading skills through playful repetition.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="curriculum-card">
+                        <div class="card-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4>Math & Numbers</h4>
+                        <p>Counting games and number recognition activities that make math fun and build foundational numeracy skills.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="curriculum-card">
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Logic & Problem-Solving</h4>
+                        <p>Puzzle games and matching activities that develop critical thinking and spatial reasoning abilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parental Controls Section -->
+    <section id="safety" class="parental-controls">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Parental Controls</h2>
+                    <p class="section-subtitle">Complete peace of mind for parents</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Time Limits</h4>
+                        <p>Set daily screen time limits and automatic breaks to ensure healthy digital habits from the start.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Progress Tracking</h4>
+                        <p>Monitor your child's learning journey with detailed progress reports and milestone celebrations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Data Privacy</h4>
+                        <p>100% private. No data collection, no ads, no tracking. Your child's information stays completely secure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">What Parents Say</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"My 3-year-old learned all her letters in just two weeks! The games are so engaging she doesn't even realize she's learning."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Sarah M.</strong>
+                            <span>Mother of Emma, 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Finally, an app I can trust! No ads, no data collection, just pure educational content. My son loves it and I have complete peace of mind."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Michael R.</strong>
+                            <span>Father of Jake, 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"As a child development specialist, I highly recommend CogniKids. The curriculum is perfectly aligned with early learning standards."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Dr. Lisa Chen</strong>
+                            <span>Child Development Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Simple, Transparent Pricing</h2>
+                    <p class="section-subtitle">Choose the plan that works for your family</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Monthly</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">9.99</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Unlimited access to all games</li>
+                            <li><i class="fas fa-check"></i> Progress tracking</li>
+                            <li><i class="fas fa-check"></i> Parental controls</li>
+                            <li><i class="fas fa-check"></i> Ad-free experience</li>
+                        </ul>
+                        <button class="btn btn-primary pricing-btn">Start Free Trial</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3>Annual</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">79.99</span>
+                                <span class="period">/year</span>
+                            </div>
+                            <div class="savings">Save 33%</div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Everything in Monthly</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Early access to new games</li>
+                            <li><i class="fas fa-check"></i> Family sharing (up to 3 kids)</li>
+                        </ul>
+                        <button class="btn btn-primary pricing-btn">Start Free Trial</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h5>Parenting Tips Blog</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Screen Time Guidelines</a></li>
+                            <li><a href="#">Early Learning Milestones</a></li>
+                            <li><a href="#">Digital Safety for Kids</a></li>
+                            <li><a href="#">Learning Through Play</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h5>Support</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h5>Connect</h5>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 CogniKids. Developed by <a href="https://rivertheme.com/" target="_blank" class="copyright-link">RiverTheme</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
